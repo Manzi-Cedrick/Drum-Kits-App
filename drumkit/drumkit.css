@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-image: url(./julio-lopez-rHjqxNZU5OY-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}   
+.drum{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 200px 30px;
+    height: 100%;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(7, 7, 7)
+}
+.key{
+    height: 130px;
+    width: 130px;
+    background: rgba(0, 0, 0, 0.829);
+    color: rgba(9, 200, 248, 0.842);
+    text-align: center;
+    padding: 55px 5px;
+    font-size: 30px;
+    animation-name: move;
+    animation-duration: 2.2s;
+    animation-iteration-count: 2;
+    box-shadow: 5px 5px 10px blue;
+
+}
+@keyframes move {
+    0%{
+        background-color: aliceblue;
+        opacity: 0.5;
+        margin-top: -60px;
+    }
+    20%{
+        background-color: aqua;
+        opacity: 0.7;
+        margin-top: -50px;
+    }
+    30%{
+        background-color: aquamarine;
+        opacity: 0.9;
+        margin-top: -30px;
+    }
+    50%{
+        background-color: azure;
+        margin-top: -20px;
+    }
+    100%{
+        background: rgba(0, 0, 0, 0.644);
+        
+    }
+}
+.key span{
+    display: block;
+    
+     
+}
+.playing .key{
+    
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
+.playing .key:nth-child(0){
+    box-shadow: 5px 5px 10px goldenrod;
+    transform: scale(0.7);
+}
+.playing .key:nth-child(1){
+    box-shadow: 5px 5px 10px goldenrod;
+    transform: scale(0.7);
+}
+.playing .key:nth-child(2){
+    box-shadow: 5px 5px 10px goldenrod;
+    transform: scale(0.7);
+}
+.playing .key:nth-child(3){
+    box-shadow: 5px 5px 10px goldenrod;
+    transform: scale(0.7);
+}
+
+.playing .key:nth-child(4){
+    box-shadow: 5px 5px 10px goldenrod;
+    transform: scale(0.7);
+}
+.playing .key:nth-child(5){
+    box-shadow: 5px 5px 10px goldenrod;
+    transform: scale(0.7);
+}
+.playing .key:nth-child(6){
+    box-shadow: 5px 5px 10px goldenrod;
+    transform: scale(0.7);
+}
+.playing .key:nth-child(7){
+    box-shadow: 5px 5px 10px goldenrod;
+    transform: scale(0.7);
+}
+.playing .key:nth-child(8){
+    box-shadow: 5px 5px 10px goldenrod;
+    transform: scale(0.7);
+}
+.playing .key:nth-child(9){
+    box-shadow: 5px 5px 10px goldenrod;
+    transform: scale(0.7);
+}
+.playing .key:nth-child(10){
+    box-shadow: 5px 5px 10px goldenrod;
+    transform: scale(0.7);
+}
+::-webkit-scrollbar-thumb{
+    width: 0px;
+}
+::-webkit-scrollbar-track{
+    width: 0px;
+}
+footer p{
+    color: rgb(126, 255, 5);
+    font-weight: bolder;
+    text-align: center;
+    font-size: 18px;
+    transform: translateY(90px);
+}
+#message{
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    
+}
